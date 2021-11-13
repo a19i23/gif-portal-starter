@@ -185,7 +185,7 @@ const sendGif = async () => {
 					{/* We use index as the key instead, also, the src is now item.gifLink */}
           {gifList.map((item, index) => (
             <div className="gif-item" key={index}>
-              <img src={item.gifLink} />
+              <img src={item.gifLink} alt="gif"/>
             </div>
           ))}
         </div>

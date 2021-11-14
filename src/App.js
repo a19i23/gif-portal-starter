@@ -186,6 +186,7 @@ const sendGif = async () => {
           {gifList.map((item, index) => (
             <div className="gif-item" key={index}>
               <img src={item.gifLink} alt="gif"/>
+              <p className="gif-item-text">Uploaded by: {item.userAddress.toString()}</p>
             </div>
           ))}
         </div>
